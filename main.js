@@ -1,21 +1,18 @@
 (function(){
 	function Main(){}
 			 var main  = new Main();
-	         Main.main = function() {
-				var Menu;
-				//---------------------------
-				var _clip,_self,_overlay,_Logo,_copyright,_screenWidth,_screenHeight,_clipWidth,_clipHeight,_stageHeight,_stageWidth,_clipRatio,_topMargin = 500,_scaled = false,_clipOriginX,_clipOriginY;
-				//---------------------------
-				var DEFAULT_MENU_SCALE_X = 5;
-				var DEFAULT_MENU_SCALE_Y = 4;
-				var CLIP_SCALE           = 1.2;
-				var ZOOM                 = "OUT"
-				if (!window.HTMLCanvasElement) {
+	         	 Main.main = function() {
+			 	     var Menu;
+			             var _clip,_self,_overlay,_Logo,_copyright,_screenWidth,_screenHeight,_clipWidth,_clipHeight,_stageHeight,_stageWidth,_clipRatio,_topMargin = 500,_scaled = false,_clipOriginX,_clipOriginY;
+				     var DEFAULT_MENU_SCALE_X = 5;
+				     var DEFAULT_MENU_SCALE_Y = 4;
+				     var CLIP_SCALE           = 1.2;
+				     var ZOOM                 = "OUT"
+			 	     if (!window.HTMLCanvasElement) {
 					alert("Your browser does not support HTML5 Canvas.");
 					return;
-				}
-				else main.initialize = function(){
-					_self = { ref:this.Main, Main:$(Main) };
+				     } else main.initialize = function(){
+				     	_self              = { ref:this.Main, Main:$(Main) };
 					var cCanvas        = _self.ref || _self.Main;
 					_screenHeight      = Capabilities.screenResolutionY;
 					_screenWidth       = Capabilities.screenResolutionX;
